@@ -91,6 +91,12 @@ order로 post 요청을 보내면 OrderPlaced에서 pay에 있는 pay커맨드�
 
 ## 5. Circuit Breaker
 
+- notify Policy에서 Order aggreagate 있는 고객정보를 조회하는 호출을 그린다
+
+![5](https://user-images.githubusercontent.com/119826162/206408051-546ba201-8063-4745-85b0-f5b256714b1f.PNG)
+
+-연결한 선을 get customer info라 명칭하고 Circuit Breaker 옵션을 켜준다.
+
 ## 6. Gateway / Ingress
 gateway의 라우터 설정으로 :8081/orders 요청과 :8088/orders 요청이 같은 서비스를 제공한다.
 
