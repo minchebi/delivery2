@@ -75,6 +75,15 @@ order로 post 요청을 보내면 OrderPlaced에서 pay에 있는 pay커맨드�
 ![cqrs](https://user-images.githubusercontent.com/119826162/206373631-854af5b7-d29f-486b-8978-b1f9745ca067.PNG)
 
 ## 3. Compensation / Correlation
+- 주문취소시 Compensation 발생,  correlation key는 orderId 사용
+
+<Order.java>
+![주문취소](https://user-images.githubusercontent.com/119826162/206406405-4777a945-d60f-4d9d-8253-7ed34a21578e.PNG)
+
+<PolicyHandler.java>
+
+![주문취소1](https://user-images.githubusercontent.com/119826162/206406578-d6e1ece8-b5c6-4428-b36c-dcc813bbd10a.PNG)
+
 
 ## 4. Request / Response
 
