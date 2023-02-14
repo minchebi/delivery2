@@ -68,12 +68,7 @@
                 [
                     { text: "id", value: "id" },
                     { text: "orderId", value: "orderId" },
-                    { text: "foodId", value: "foodId" },
-                    { text: "addr", value: "addr" },
-                    { text: "customerId", value: "customerId" },
                     { text: "status", value: "status" },
-                    { text: "option", value: "option" },
-                    { text: "orderDetail", value: "orderDetail" },
                 ],
             order : [],
             newValue: {},
@@ -92,12 +87,7 @@
 
             this.newValue = {
                 'orderId': '',
-                'foodId': '',
-                'addr': '',
-                'customerId': '',
                 'status': '',
-                'option': [],
-                'orderDetail': '',
             }
         },
         methods: {

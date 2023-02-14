@@ -1,11 +1,11 @@
 package mymall.domain;
 
-import mymall.domain.*;
 import mymall.infra.AbstractEvent;
-import lombok.*;
+import lombok.Data;
 import java.util.*;
+
+
 @Data
-@ToString
 public class OrderAcepted extends AbstractEvent {
 
     private Long id;
@@ -14,7 +14,5 @@ public class OrderAcepted extends AbstractEvent {
     private String foodId;
     private String storeId;
     private String customerId;
-    private Object option;
+    private List<String> option;
 }
-
-

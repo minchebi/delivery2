@@ -18,22 +18,7 @@
                                 OrderId :  {{item.orderId }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                FoodId :  {{item.foodId }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                Addr :  {{item.addr }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                CustomerId :  {{item.customerId }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
                                 Status :  {{item.status }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                Option :  {{item.option }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                OrderDetail :  {{item.orderDetail }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 
@@ -86,16 +71,6 @@
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
                     obj['id'] = arr[4]; 
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     

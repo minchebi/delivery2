@@ -18,7 +18,12 @@
 
         <v-card-text>
             <String label="OrderId" v-model="value.orderId" :editMode="editMode"/>
+            <String label="FoodId" v-model="value.foodId" :editMode="editMode"/>
+            <String label="Addr" v-model="value.addr" :editMode="editMode"/>
+            <String label="CustomerId" v-model="value.customerId" :editMode="editMode"/>
             <String label="Status" v-model="value.status" :editMode="editMode"/>
+            <String label="Option" v-model="value.option" :editMode="editMode"/>
+            <String label="OrderDetail" v-model="value.orderDetail" :editMode="editMode"/>
         </v-card-text>
 
         <v-card-actions>
@@ -37,7 +42,8 @@
                     @click="save"
                     v-else
             >
-                Save
+                Order
+                Cancel
             </v-btn>
             <v-btn
                     color="deep-purple lighten-2"

@@ -37,8 +37,8 @@ public class Order  {
     
     private String status;
 
-    @PostPersist
-    public void onPostPersist(){
+    @PreRemove
+    public void onPreRemove(){
 
 
         OrderCancel orderCancel = new OrderCancel(this);
